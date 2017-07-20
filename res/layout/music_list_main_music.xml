@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#C8F3F4F1"
+    android:orientation="vertical" >
+
+    <Button 
+        android:id="@+id/btn_list_random_music"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="@string/btn_list_random_music"
+        style="@style/btn_style2"
+     />
+	<View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#8F999999" />
+    <ListView
+        android:id="@+id/lv_list_music"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none" >
+    </ListView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#8F999999" />
+</LinearLayout>

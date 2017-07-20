@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_download_list_item_number"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:textColor="#494949"
+        android:textSize="15sp" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/ibtn_download_list_item_menu"
+        android:layout_toRightOf="@id/tv_download_list_item_number"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_download_list_item_top"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="3dp"
+            android:lines="1"
+            android:singleLine="true"
+            android:textColor="#494949"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_download_list_item_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:lines="1"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+     <Button
+            android:id="@+id/ibtn_download_list_item_menu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+        	android:layout_centerVertical="true"
+            android:background="@drawable/music_btn_delete" />
+
+</RelativeLayout>

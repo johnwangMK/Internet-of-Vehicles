@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/music_main_bg">
+
+    <RelativeLayout
+        android:id="@+id/rl_player_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/player_top_bg" >
+
+        <ImageButton
+            android:id="@+id/ibtn_player_list"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/player_btn_list" />
+
+        <TextView
+            android:id="@+id/tv_player_song_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ibtn_player_voice"
+            android:layout_toRightOf="@id/ibtn_player_list"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:lines="1"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/ibtn_player_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/player_btn_voice" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/ll_player_bottombar"
+        android:layout_below="@id/rl_player_topbar" >
+        <com.carmusic.custom.FlingGalleryView
+            android:id="@+id/fgv_player_main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true" >
+
+            <include
+                android:id="@+id/player_main_album"
+                layout="@layout/music_player_album" />
+
+            <include
+                android:id="@+id/player_main_lyric"
+                layout="@layout/music_player_lyric" />
+        </com.carmusic.custom.FlingGalleryView>
+
+        <RelativeLayout
+            android:id="@+id/ll_player_voice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/player_progresslayout_bg"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/iv_player_min_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/player_volume_min_icon" />
+
+            <ImageView
+                android:id="@+id/iv_player_max_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/player_volume_max_icon" />
+
+            <SeekBar
+                android:id="@+id/sb_player_voice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_player_max_voice"
+                android:layout_toRightOf="@id/iv_player_min_voice"
+                android:background="@drawable/player_voice_seekbar_bg"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:progressDrawable="@drawable/player_voice_seekbar_progress"
+                android:thumb="@drawable/player_voice_seekbar_thumb" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_player_bottombar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_player_bottom"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/player_progresslayout_bg" >
+
+            <TextView
+                android:id="@+id/tv_player_playing_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="00:00"
+                android:textColor="@android:color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_player_playering_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="00:00"
+                android:textColor="@android:color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/sb_player_playprogress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tv_player_playering_duration"
+                android:layout_toRightOf="@id/tv_player_playing_time"
+                android:max="0"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:progressDrawable="@drawable/player_seekbar_progress"
+                android:background="@drawable/player_progress_bg"
+                android:thumb="@drawable/player_seekbar_thumb" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/player_control_bg" >
+
+            <ImageView
+                android:id="@+id/ibtn_player_control_menu"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/player_control_menu" />
+
+            <ImageButton
+                android:id="@+id/ibtn_player_control_mode"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/player_btn_player_mode_circlelist" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/ibtn_player_control_mode"
+                android:layout_toRightOf="@id/ibtn_player_control_menu"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/ibtn_player_control_pre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/player_btn_player_pre" />
+
+                <ImageButton
+                    android:id="@+id/ibtn_player_control_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/player_btn_player_play" />
+
+                <ImageButton
+                    android:id="@+id/ibtn_player_control_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/player_btn_player_next" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

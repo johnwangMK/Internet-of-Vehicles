@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/music_main_bg">
+
+     <include layout="@layout/music_setting_top" android:id="@+id/bar_setting_top"/>
+    <FrameLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="#8f00000f"
+        android:layout_above="@+id/ll_scan_music_bottom"
+        android:layout_below="@+id/bar_setting_top"
+        >
+        <ListView
+        android:id="@+id/lv_scan_music_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="#8F999999"
+        android:dividerHeight="1dp"
+        android:layout_gravity="top"
+        android:fadingEdge="none"
+         >
+    </ListView>
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/ll_scan_music_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/music_btn_common"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <Button
+            android:id="@+id/btn_scan_ok"
+            style="@style/btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_scan_ok" />
+
+        <Button
+            android:id="@+id/btn_scan_add"
+            style="@style/btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_scan_add" />
+    </LinearLayout>
+</RelativeLayout>

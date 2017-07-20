@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whitesmoke"
+    tools:context=".MycarActivity" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/csy_btn_h"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/blue"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/img_back_mycar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/goback" />
+
+        <LinearLayout
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.77"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="我的爱车"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_add_car"
+            android:layout_width="30dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/saoma" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_mycar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/LinearLayout2" >
+    </ListView>
+
+    <View
+        android:id="@+id/View1"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lv_mycar"
+        android:layout_marginTop="20dp"
+        android:background="@color/huise" />
+
+    <LinearLayout
+        android:id="@+id/ll_addcar"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/View1"
+        android:background="@drawable/list_press_selector"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textColor="@color/blue"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="添加车辆"
+            android:textColor="@color/blue"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/View2"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ll_addcar"
+        android:background="@color/huise" />
+
+    <FrameLayout
+        android:id="@+id/popLoader_car"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/View2"
+        android:background="@color/transparent" >
+
+        <ProgressBar
+            android:id="@+id/progressBar_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="35.0dp" />
+
+        <TextView
+            android:id="@+id/pt_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="正在加载..."
+            android:textColor="@color/csy_text"
+            android:textSize="@dimen/csy_tip_ts" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/badnet_car"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/popLoader_car"
+        android:background="@color/transparent"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/imgnet_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:src="@drawable/badnet" />
+
+        <TextView
+            android:id="@+id/pt_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:text="网络不佳"
+            android:textColor="@color/csy_text"
+            android:textSize="@dimen/csy_tip_ts" />
+    </FrameLayout>
+
+</RelativeLayout>

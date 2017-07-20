@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OrderList" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/csy_btn_h"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/blue"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/back_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/goback" />
+
+        <TextView
+            android:id="@+id/ordertitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="我的订单"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/RelativeLayout2"
+        android:dividerHeight="10dp" >
+    </ListView>
+
+    <FrameLayout
+        android:id="@+id/popLoader_order"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/lv_order"
+        android:background="@color/transparent" >
+
+        <ProgressBar
+            android:id="@+id/progressBar_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35.0dp"
+            android:layout_gravity="center" />
+        <TextView
+            android:id="@+id/pt_order"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:gravity="center"
+	        android:text="正在加载..."
+	        android:textColor="@color/csy_text"
+	        android:textSize="@dimen/csy_tip_ts"/>
+
+    </FrameLayout>
+        <FrameLayout
+        android:id="@+id/badnet_order"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/lv_order"
+        android:visibility="gone"
+        android:background="@color/transparent" >
+
+        <ImageView
+            android:id="@+id/imgnet_order"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:gravity="center"
+	        android:src="@drawable/badnet"/>
+                <TextView
+            android:id="@+id/pt_order"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:layout_marginTop="60dp"
+	        android:text="网络不佳"
+	        android:textColor="@color/csy_text"
+	        android:textSize="@dimen/csy_tip_ts"/>
+
+    </FrameLayout>
+</RelativeLayout>

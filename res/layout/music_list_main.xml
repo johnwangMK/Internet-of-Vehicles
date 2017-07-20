@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_parent_cotent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/music_main_bg">
+
+    <View
+        android:id="@+id/v_list_main_top_bar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true" >
+    </View>
+
+    <LinearLayout
+        android:id="@+id/rl_list_main_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/ll_list_bottom_bar"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/v_list_main_top_bar"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/player_top_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <include
+                android:id="@+id/list_tab_item_music"
+                layout="@layout/music_list_tab_item" />
+
+            <include
+                android:id="@+id/list_tab_item_web"
+                layout="@layout/music_list_tab_item" />
+
+            <include
+                android:id="@+id/list_tab_item_download"
+                layout="@layout/music_list_tab_item" />
+        </LinearLayout>
+
+        <com.carmusic.custom.FlingGalleryView
+            android:id="@+id/fgv_list_main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <include
+                android:id="@+id/list_main_music"
+                layout="@layout/music_list_main_music" />
+
+            <include
+                android:id="@+id/list_main_web"
+                layout="@layout/music_list_main_web" />
+
+            <include
+                android:id="@+id/list_main_download"
+                layout="@layout/music_list_main_download" />
+        </com.carmusic.custom.FlingGalleryView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_list_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/ll_list_bottom_bar"
+        android:layout_below="@+id/v_list_main_top_bar"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/player_top_bg" >
+
+            <ImageButton
+                android:id="@+id/ibtn_list_content_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:id="@+id/tv_list_content_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toLeftOf="@+id/ibtn_list_content_do_icon"
+                android:layout_toRightOf="@+id/ibtn_list_content_icon"
+                android:gravity="left"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/ibtn_list_content_do_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/music_btn_add_style"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#C8F3F4F1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_list_random_music2"
+                style="@style/btn_style2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/btn_list_random_music"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#8F999999" />
+
+            <ListView
+                android:id="@+id/lv_list_change_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/list_divider"
+                android:dividerHeight="1dp"
+                android:fadingEdge="none" >
+            </ListView>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#8F999999" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_list_bottom_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/music_list_bottom_bar_bg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/ibtn_player_albumart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/music_min_default_album" />
+
+        <ImageButton
+            android:id="@+id/ibtn_player_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            
+            android:background="@drawable/player_btn_mini_player" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_player_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:ellipsize="none"
+                android:gravity="center"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"/>
+			<RelativeLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    >
+			    <TextView 
+			    android:text="00:00"
+			    android:id="@+id/tv_player_currentPosition"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:textColor="@android:color/white"
+			    android:textSize="10sp"
+			    />
+			     <TextView 
+			    android:text="00:00"
+			    android:id="@+id/tv_player_duration"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textSize="10sp"
+			    android:textColor="@android:color/white"
+			    android:layout_alignParentRight="true"
+			    />
+			</RelativeLayout>
+            <ProgressBar
+                android:id="@+id/pb_player_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="8dp"
+                android:progressDrawable="@drawable/player_progress_style"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

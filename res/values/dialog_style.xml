@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="textAppearanceDialogWindowTitle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="dialogWindowTitle">
+        <item name="android:textAppearance">@style/textAppearanceDialogWindowTitle</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+    <style name="animationDialog">
+        <item name="android:windowEnterAnimation">@anim/music_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/music_dialog_exit</item>
+    </style>
+
+    <style name="XfDialog">
+
+        <!-- 屏幕背景不变暗 -->
+        <!-- <item name="android:backgroundDimEnabled">false</item> -->
+        <!-- 更换背景图片实现全透明 -->
+        <item name="android:windowBackground">@color/translucence</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否悬浮在Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <!-- <item name="android:windowIsTranslucent">true</item> -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 更改对话框标题栏 -->
+        <item name="android:windowTitleStyle">@style/dialogWindowTitle</item>
+        <item name="android:windowAnimationStyle">@style/animationDialog</item>
+        <item name="android:popupBackground">@color/translucence</item>
+        
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+</resources>

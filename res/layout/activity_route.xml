@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RouteActivity" >
+    
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/route_bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:background="@color/darkgray" >
+        
+        <TextView
+            android:id="@+id/route_start"
+            android:layout_height="40dp"
+            android:layout_width="60dp"
+            android:layout_marginTop="5dp"
+            android:text="起点:"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/route_start_text"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:hint="请输入起点"
+            android:layout_alignBaseline="@+id/route_start"
+            android:layout_alignBottom="@+id/route_start"
+            android:layout_toRightOf="@+id/route_start"
+            android:background="@drawable/route_text_bg"
+            android:ems="10" />
+
+        <EditText
+            android:id="@+id/route_end_text"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:hint="请输入终点"
+            android:layout_alignBaseline="@+id/route_end"
+            android:layout_alignBottom="@+id/route_end"
+            android:layout_alignLeft="@+id/route_start_text"
+            android:layout_alignRight="@+id/route_start_text"
+            android:background="@drawable/route_text_bg"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/route_end"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/route_end_text"
+            android:gravity="center"
+            android:text="终点:"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/reverse_route_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="50dp"
+            android:text="交换始末点" />
+
+        <Button
+            android:id="@+id/route_search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/route_end_text"
+            android:text="驾车路径检索" />
+
+    </RelativeLayout>
+    
+    <ImageButton
+        android:id="@+id/route_location"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/location_button_selector" />
+
+    <ImageButton
+        android:id="@+id/route_map_minus"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/route_location"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/map_minus_button_selector" />
+
+    <ImageButton
+        android:id="@+id/route_map_add"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/route_map_minus"
+        android:layout_alignLeft="@+id/route_map_minus"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/map_add_button_selector" />
+
+</RelativeLayout>

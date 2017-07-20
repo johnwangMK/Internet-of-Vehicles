@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/music_setting_top" android:id="@+id/bar_setting_top"/>
+    <Button 
+        android:id="@+id/btn_scan_directory_goup"
+        android:layout_below="@+id/bar_setting_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_scan_directory_goup"
+        style="@style/btn_base_style"
+        />
+    <View
+        android:id="@+id/v_scan_music_space_line"
+        android:layout_below="@+id/btn_scan_directory_goup"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#C8999999" />
+    <FrameLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="#8f00000f"
+        android:layout_above="@+id/ll_scan_music_bottom"
+        android:layout_below="@+id/v_scan_music_space_line"
+        >
+        <ListView
+        android:id="@+id/lv_scan_music_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="#8F999999"
+        android:dividerHeight="1dp"
+        android:layout_gravity="top"
+        android:fadingEdge="none"
+         >
+    </ListView>
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/ll_scan_music_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/music_list_bottom_bar_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <Button
+            android:id="@+id/btn_scan_add"
+            style="@style/btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_san_directory_add" />
+
+        <Button
+            android:id="@+id/btn_scan_back"
+            style="@style/btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_san_directory_back" />
+    </LinearLayout>
+</RelativeLayout>

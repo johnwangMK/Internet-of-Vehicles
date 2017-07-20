@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<song id="1">
+		<name>倩女幽魂</name>
+		<artist>张国荣</artist>
+		<album>丰盛的一生之国语精选</album>
+		<displayName>倩女幽魂.mp3</displayName>
+		<mimeType>audio/mpeg</mimeType>
+		<netUrl>http://www.zihou.me/music/danqu/qiannvyouhun.mp3</netUrl>
+		<durationTime>217000</durationTime>
+		<size>3484569</size>
+	</song>
+	<song id="2">
+		<name>白月光</name>
+		<artist>张信哲</artist>
+		<album>下一个永远</album>
+		<displayName>白月光.mp3</displayName>
+		<mimeType>audio/mpeg</mimeType>
+		<netUrl>http://vietnamese.cri.cn/mmsource/audio/2009/09/16/baiyueguang.mp3</netUrl>
+		<durationTime>267000</durationTime>
+		<size>4283836</size>
+	</song>
+	<song id="3">
+		<name>不分手的恋爱</name>
+		<artist>汪苏泷</artist>
+		<album>不分手的恋爱</album>
+		<displayName>不分手的恋爱.mp3</displayName>
+		<mimeType>audio/mpeg</mimeType>
+		<netUrl>http://125.76.238.27/vnetcms2_files/upload/21/news/attachment/253/1303419131370.mp3</netUrl>
+		<durationTime>205000</durationTime>
+		<size>4939017</size>
+	</song>
+	<song id="4">
+		<name>老男孩</name>
+		<artist>筷子兄弟</artist>
+		<album>老男孩</album>
+		<displayName>老男孩.mp3</displayName>
+		<mimeType>audio/mpeg</mimeType>
+		<netUrl>http://www.qqmay.com/mp3/qqlink/dnmi0rd7.mp3</netUrl>
+		<durationTime>300000</durationTime>
+		<size>4818954</size>
+	</song>
+	<song id="5">
+		<name>最初的梦想</name>
+		<artist>范玮琪</artist>
+		<album>最初的梦想</album>
+		<displayName>最初的梦想.mp3</displayName>
+		<mimeType>audio/mpeg</mimeType>
+		<netUrl>http://www.qqmay.com/mp3/qqlink/dnmi0oxm.mp3</netUrl>
+		<durationTime>296000</durationTime>
+		<size>4743808</size>
+	</song>
+	<song id="6">
+		<name>父亲</name>
+		<artist>筷子兄弟</artist>
+		<album>父亲</album>
+		<displayName>父亲.mp3</displayName>
+		<mimeType>audio/mpeg</mimeType>
+		<netUrl>http://www.qqmay.com/mp3/qqlink/c2bwgwoc.mp3</netUrl>
+		<durationTime>301000</durationTime>
+		<size>7228717</size>
+	</song>
+	<song id="7">
+		<name>心要让你听见</name>
+		<artist>邰正宵</artist>
+		<album>邰正宵精选</album>
+		<displayName>心要让你听见.mp3</displayName>
+		<mimeType>audio/mpeg</mimeType>
+		<netUrl>http://www.qqmay.com/mp3/qqlink/aq78m7i0.mp3</netUrl>
+		<durationTime>265000</durationTime>
+		<size>4251776</size>
+	</song>
+	<song id="8">
+		<name>把悲伤留给自己</name>
+		<artist>陈升</artist>
+		<album>滚石30周年精选珍藏集</album>
+		<displayName>把悲伤留给自己.mp3</displayName>
+		<mimeType>audio/mpeg</mimeType>
+		<netUrl>http://www.qqmay.com/mp3/qqlink/bhdnx0al.mp3</netUrl>
+		<durationTime>278000</durationTime>
+		<size>5801437</size>
+	</song>
+	<song id="9">
+		<name>难道爱一个人有错吗</name>
+		<artist>郑源</artist>
+		<album>爱过的人</album>
+		<displayName>难道爱一个人有错吗.mp3</displayName>
+		<mimeType>audio/mpeg</mimeType>
+		<netUrl>http://www.qqmay.com/mp3/qqlink/clqmjcna.mp3</netUrl>
+		<durationTime>266000</durationTime>
+		<size>4273608</size>
+	</song>
+	<song id="10">
+		<name>幸福恋人</name>
+		<artist>郑源</artist>
+		<album>源情歌</album>
+		<displayName>幸福恋人.mp3</displayName>
+		<mimeType>audio/mpeg</mimeType>
+		<netUrl>http://www.qqmay.com/mp3/qqlink/c2m1q77p.mp3</netUrl>
+		<durationTime>233000</durationTime>
+		<size>3791935</size>
+	</song>
+</list>

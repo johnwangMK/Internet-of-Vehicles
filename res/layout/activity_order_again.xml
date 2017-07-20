@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/l_arrivetime"
+    tools:context=".OrderAgain" >
+
+    <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:minHeight="30dp"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.11"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/all_selectdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.19"
+                        android:background="@drawable/edittext1" >
+
+                        <TextView
+                            android:id="@+id/atv_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.01"
+                            android:gravity="center"
+                            android:minHeight="30dp"
+                            android:text=""
+                            android:textSize="17sp" />
+
+                        <ImageButton
+                            android:id="@+id/abt_datedropdown"
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/down_arrow" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/all_selecttime"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0.00"
+                        android:background="@drawable/edittext1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/atv_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.93"
+                            android:gravity="center"
+                            android:minHeight="30dp"
+                            android:text=""
+                            android:textSize="17sp" />
+
+                        <ImageButton
+                            android:id="@+id/abt_timedropdown"
+                            android:layout_width="15dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/down_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+</RelativeLayout>

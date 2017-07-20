@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NearByFragment" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true" />
+    
+    <EditText
+        android:id="@+id/autotext"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/searchtext_bg" />
+
+    <ImageButton
+        android:id="@+id/map_add"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/location"
+        android:layout_alignLeft="@+id/traffic"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/map_add_button_selector" />
+
+    <ImageButton
+        android:id="@+id/map_minus"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignLeft="@+id/map_add"
+        android:layout_alignTop="@+id/location"
+        android:background="@drawable/map_minus_button_selector" />
+
+    <ImageButton
+        android:id="@+id/location"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignLeft="@+id/autotext"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/location_button_selector" />
+
+    <ImageButton
+        android:id="@+id/traffic"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/autotext"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/traffic_false" />
+
+    <ImageButton
+        android:id="@+id/search_btn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/traffic"
+        android:layout_alignLeft="@+id/traffic"
+        android:src="@drawable/search"
+        android:background="@drawable/searchbtn_bg" />
+
+    <ImageButton
+        android:id="@+id/poi_list_btn"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_alignLeft="@+id/traffic"
+        android:layout_below="@+id/traffic"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/v_show_list_selector"
+        android:background="@drawable/v_list_btn_bg" />
+
+</RelativeLayout>

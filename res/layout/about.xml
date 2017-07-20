@@ -1,0 +1,261 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".About" >
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/csy_btn_h"
+        android:background="@color/blue"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/back_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/goback" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="关于"
+            android:textSize="20sp" />
+    </RelativeLayout>
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/huise" />
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" 
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/logo" 
+            android:layout_marginTop="20dp"
+        />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="好加油 v1.0" 
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>   
+    
+<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.1dp"
+            android:background="@drawable/divider_mine" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/list_press_selector"
+                android:clickable="true"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/LL1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.64"
+                    android:text="团队名称"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="桂林电子科技大学犇跑团队"
+                    android:layout_marginRight="10dp"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            </LinearLayout>
+
+		<View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="#dddddd" />
+		
+		<LinearLayout
+                android:id="@+id/LL_contact_us"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/list_press_selector"
+                android:clickable="true"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:orientation="horizontal" >
+				
+		    <TextView
+		        android:layout_height="wrap_content"
+		        android:layout_width="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:text="电话"
+		        android:textSize="15sp"
+		        android:layout_gravity="center_vertical" />
+		    
+            <RelativeLayout
+                android:id="@+id/LL1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="800-820-8820"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/about_contact"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/textView3"
+                    android:clickable="true"
+                    android:src="@drawable/contact_us" />
+            </RelativeLayout>
+
+            </LinearLayout>
+            
+		<View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="#dddddd" />
+		
+		<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/list_press_selector"
+                android:clickable="true"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.64"
+                    android:text="邮箱"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="benpao@gmail.com"
+                    android:layout_marginRight="10dp"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            </LinearLayout>
+            
+		<View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="#dddddd" />
+		
+		<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/list_press_selector"
+                android:clickable="true"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.64"
+                    android:text="网址"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="www.benpao.com"
+                    android:layout_marginRight="10dp"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            </LinearLayout>
+           
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp" >
+            <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="center_horizontal"
+            android:text="桂林电子科技大学   版权所有"
+            android:textSize="13sp" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="Copyright©2016"
+            android:textSize="13sp" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="All Rights Reserved"
+            android:textSize="13sp" />
+        </LinearLayout>
+        
+</LinearLayout>
