@@ -34,3 +34,9 @@
 ![](https://github.com/johnwangMK/Internet-of-Vehicles/blob/master/show/weizhang.jpg)
 * 个人主页<br>
 ![](https://github.com/johnwangMK/Internet-of-Vehicles/blob/master/show/personal_page.jpg)
+## 用到的资源
+* [百度地图API](http://lbsyun.baidu.com/)
+* [聚合数据加油站API](https://www.juhe.cn/docs/api/id/7)
+* [聚合数据违章API](https://www.juhe.cn/docs/api/id/36)
+* [个推](http://www.getui.com/cn/index.html)
+* [mob短信API](http://sms.mob.com/)
