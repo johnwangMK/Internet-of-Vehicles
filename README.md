@@ -14,4 +14,6 @@
 桂林电子科技大学“犇跑”团队<br>
 团队成员：汪俊宏、缪永进、邹魏
 ## 作品展示
-### 作品logo
+* 作品logo
+![](https://github.com/johnwangMK/Internet-of-Vehicles/blob/master/show/welcome_logo.png)
+* APP首页
