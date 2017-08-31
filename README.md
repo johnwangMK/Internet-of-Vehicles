@@ -26,11 +26,11 @@
 ![](https://github.com/johnwangMK/Internet-of-Vehicles/blob/master/show/gas_station.png)
 * 预约加油<br>
 ![](https://github.com/johnwangMK/Internet-of-Vehicles/blob/master/show/gas_appointment.png)
-* 加油订单管理
+* 加油订单管理<br>
 ![](https://github.com/johnwangMK/Internet-of-Vehicles/blob/master/show/order.png)
-* 车辆管理
+* 车辆管理<br>
 ![](https://github.com/johnwangMK/Internet-of-Vehicles/blob/master/show/car_management.jpg)
-* 违章查询
+* 违章查询<br>
 ![](https://github.com/johnwangMK/Internet-of-Vehicles/blob/master/show/weizhang.jpg)
-* 个人主页
+* 个人主页<br>
 ![](https://github.com/johnwangMK/Internet-of-Vehicles/blob/master/show/personal_page.jpg)
