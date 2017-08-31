@@ -16,4 +16,12 @@
 ## 作品展示
 * 作品logo<br>
 ![](https://github.com/johnwangMK/Internet-of-Vehicles/blob/master/show/welcome_logo.png)
-* APP首页
+* APP首页<br>
+![](https://github.com/johnwangMK/Internet-of-Vehicles/blob/master/show/main_page.png)
+* 地图展示附近加油站<br>
+![](https://github.com/johnwangMK/Internet-of-Vehicles/blob/master/show/main.png)
+* 列表展示附近加油站<br>
+![](https://github.com/johnwangMK/Internet-of-Vehicles/blob/master/show/nearby_gas_station.png)
+* 加油站详细信息<br>
+![](https://github.com/johnwangMK/Internet-of-Vehicles/blob/master/show/gas_station.png)
+
